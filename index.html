@@ -1,0 +1,66 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet"> 
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header class="header-container">
+            <div class="header-text">
+                <h1 class="header-title">Jimmy's Diner</h1>
+                <h3 class="header-subtitle">The best burgers and pizzas in town.</h3>
+            </div>
+        </header>
+        <main>
+            <section id="feed">
+                <!-- Menu items populated -->
+            </section>
+            <div class="order-success-msg msg-hidden">
+                <!-- Order Success Message -->
+            </div>
+            <section class="order-container order-hidden">
+                <h2 class="order-title">Your Order</h2>
+                <div class="order-items">
+                    <!-- Ordered items populated -->
+                </div>
+                <div class="order-total-container">
+                    <h2 class="order-total">Total Price:</h2>
+                    <h3 class="order-total-cost">
+                        <!-- Total cost populated -->
+                    </h3>
+                </div>
+                <button type="button" id="order-button">Complete Order</button>
+            </section>
+            <section class="modal-container modal-hidden">
+                <form class="modal-form">
+                    <h2 class="modal-title">Enter card details</h2>
+                    <input 
+                        class="modal-element" 
+                        type="input"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name" 
+                        required>
+                    <input 
+                        class="modal-element" 
+                        type="input" 
+                        id="number"
+                        name="number"
+                        placeholder="Enter card number" 
+                        required>
+                    <input 
+                        class="modal-element" 
+                        type="input" 
+                        id="number"
+                        name="security"
+                        placeholder="Enter CVV"
+                        required>
+                    <button id="modal-button" type="submit">Pay</button>
+                </form>
+            </section>
+        </main>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+

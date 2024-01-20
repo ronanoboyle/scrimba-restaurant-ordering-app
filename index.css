@@ -1,0 +1,240 @@
+body {
+    margin: 0 auto;
+    font-family: 'Smythe', system-ui;
+    max-width: 600px;
+}
+
+button {
+    background: #16DB99;
+    border: none;
+    color: #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    border-radius: 3px; 
+}
+
+.header-container {
+    background-image: url("/images/burger-background.jpeg");
+    background-position: center 70%;
+    background-size: cover;
+    height: 160px;
+    background-repeat: no-repeat;
+}
+
+.header-text {
+    padding: 45px;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 40px;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.header-subtitle {
+    margin-top: 4px;
+    font-size: 22px;
+    color: #FFF;
+    font-weight: 400;
+}
+
+#feed {
+    padding: 24px 48px;
+    margin: 0 auto;
+}
+
+.item-container {
+    display: flex;
+    background: #FFF;
+    border-bottom: 1px solid #D2D2D2;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.menu-item-emoji {
+    margin: 0;
+    font-size: 80px;
+    opacity: 0.75;
+}
+
+.item-info {
+    display: flex;
+}
+
+.item-text {
+    margin: 0 0 20px 30px;
+}
+
+.item-title {
+    line-height: 0;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.ingredients {
+    font-size: 16px;
+    color: #8B8B8B;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.add-item-button {
+    margin-top: 5px;
+    vertical-align: middle;
+    font-size: 32px;
+    font-weight: 200;
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #8B8B8B;
+    background-color: #FFF;
+}
+
+.add-item-button:hover {
+    cursor: pointer;
+    background: #DEDEDE;
+    box-shadow: 1px 2px 8px #8B8B8B;
+    color: #3C3C3C;
+}
+
+
+/* order styling */
+.order-hidden {
+    display: none;
+}
+
+.order-title {
+    font-size: 28px;
+    text-align: center;
+}
+
+.order-container {
+    padding: 0 45px;
+}
+
+.order-items {
+    margin-top: 40px;
+    border-bottom: 2px solid #393333;
+    font-size: 20px;
+}
+
+.order-item-info {
+    margin-bottom: 16px;
+}
+
+.order-item-title {
+    margin: 0;
+    font-weight: 400;
+}
+
+.order-item-cost {
+    margin: 0;
+    font-weight: 400;
+}
+
+.order-item-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.remove-item {
+    margin: 0 16px;
+    align-self: center;
+    color: #BBBBBB;
+    cursor: pointer;
+}
+
+.remove-item:hover {
+    color: red;
+    text-shadow: 1px 2px 2px #BBBBBB;
+}
+
+.order-total-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-total {
+    font-size: 28px;
+}
+
+.order-total-cost {
+    font-size: 24px;
+}
+
+#order-button {
+    margin-top: 25px;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#order-button:hover, #modal-button:hover {
+    background: #8B8B8B;
+}
+
+/* modal styling */
+.modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background: grey;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+    margin: 40px 0 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+
+.modal-hidden {
+    display: none;
+}
+
+.modal-form {
+    max-width: 500px;
+    width: 90%;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    border-radius: 4px;
+}
+
+.modal-element {
+    margin-top: 20px;
+    border: 2px solid #8B8B8B;
+    border-radius: 3px;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+#modal-button {
+    margin: 40px 0 25px;
+    padding: 20px;
+}
+
+.order-success-msg {
+    border-radius: 3px;
+    padding: 20px 0;
+    margin: 20px 48px;
+    text-align: center;
+    font-size: 20px;
+    color: #065F46;
+    background-color: #ECFDF5;
+}
+
+.msg-hidden {
+   display: none; 
+}
